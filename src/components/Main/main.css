@@ -1,0 +1,328 @@
+.main_block {
+    width: 100%;
+    padding: 30px 20px;
+}
+
+@media only screen and (min-width: 769px) {
+    .main_block {
+        padding: 85px 85px;
+        width: 70%;
+    }
+}
+
+.main_block-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.main_block-header h3 {
+    color: #000;
+    font-family: "Inter";
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.main_block-header_category-color {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media only screen and (min-width: 769px) {
+    .main_block-header h3 {
+        font-size: 50px;
+    }
+}
+
+.main_block-header img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.main_color-label {
+    width: 16px;
+    height: 16px;
+    border-radius: 15px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.main_color-label_style {
+    cursor: pointer;
+}
+/* tooltip */
+.tooltip {
+    box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    gap: 10px;
+    padding: 5px;
+    position: relative;
+    height: 52px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.tooltip::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid white;
+    left: -8px;
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+    top: 33%;
+}
+
+.main_block-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+    padding-bottom: 65px;
+}
+
+.main_block-search > label {
+    position: relative;
+    width: 100%;
+}
+
+.main_block-search_input {
+    font-family: "SF Pro Display", sans-serif;
+    width: 100%;
+    height: 47px;
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 7px;
+    border: 1px solid #000;
+    background: #fff;
+    padding: 6px 6px;
+    outline: none;
+}
+
+@media only screen and (min-width: 769px) {
+    .main_block-search_input {
+        font-size: 30px;
+        padding: 6px 18px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .main_block-search_input {
+        height: 60px;
+    }
+}
+
+.main_block-search_input:focus {
+    outline: 1px solid gray;
+}
+
+.add_task_button {
+    right: 7px;
+    top: 7px;
+    position: absolute;
+    border-radius: 12px;
+    background: #bebebe;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 769px) {
+    .add_task_button {
+        width: 65px;
+        height: 45px;
+    }
+}
+
+.add_task_button svg {
+    width: 13px;
+    height: 31px;
+}
+
+.main_block-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main_block-tasks li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* custom checkbox */
+.main_block-tasks_item {
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 769px) {
+    .main_block-tasks_item {
+        font-size: 30px;
+        padding-left: 60px;
+    }
+}
+
+.main_block-tasks_item:hover input ~ .checkmark {
+    background-color: #f0eaea;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (min-width: 769px) {
+    .checkmark {
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+    }
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.main_block-task_item-input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.main_block-task_item-input:checked {
+    text-decoration: line-through;
+}
+
+.main_block-task_item-input {
+    width: auto;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.main_block-tasks_item .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 7px;
+    border: solid #39ae68;
+    border-width: 0 5px 5px 0;
+    transform: rotate(40deg);
+}
+
+@media only screen and (min-width: 769px) {
+    .main_block-tasks_item .checkmark:after {
+        left: 8px;
+        top: 0px;
+        width: 11px;
+        height: 20px;
+    }
+}
+
+.task_label {
+    padding: 4px 8px;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Inter";
+    font-size: 11px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 769px) {
+    .task_label {
+        font-size: 15px;
+        padding: 7px 15px;
+    }
+}
+
+.main_block-tasks_options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media only screen and (min-width: 769px) {
+    .main_block-tasks_options {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        gap: 15px;
+    }
+}
+
+.main_block-tasks_options img {
+    cursor: pointer;
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.mobile_icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 769px) {
+    .mobile_menu {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .mobile_icon {
+        display: none;
+    }
+}
+
+.add_task_button.disabled {
+    background-color: #e3dfdf;
+}

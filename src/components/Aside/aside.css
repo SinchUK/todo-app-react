@@ -1,0 +1,114 @@
+.aside_block {
+    border-right: 1px solid #d8d8d8;
+    min-height: 100vh;
+    /* flex: 1; */
+    width: 30%;
+    padding: 0px 20px 20px;
+}
+
+@media only screen and (max-width: 769px) {
+    .aside_block {
+        display: none;
+    }
+}
+
+.aside_menu {
+    padding: 80px 40px;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.aside_menu-items {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    padding-bottom: 45px;
+}
+
+.aside_menu-items li {
+    list-style: none;
+}
+
+.aside_menu-items li a {
+    text-transform: capitalize;
+}
+
+.aside_munu-items_link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    font-family: "Inter";
+    font-size: 26px;
+    /* font-weight: 400; */
+}
+
+.aside_menu-new_category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aside_menu-new_category span:hover {
+    color: rgb(70, 69, 69);
+}
+
+.aside_menu-new_category svg:hover {
+    stroke: rgb(70, 69, 69);
+}
+
+.aside_menu-new_category span {
+    color: #ababab;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.aside_menu-items_current {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.aside_menu-new_category-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    position: relative;
+}
+
+.aside_menu-search_input {
+    font-family: "SF Pro Display", sans-serif;
+    color: #aaa;
+    font-size: large;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #fff;
+    padding: 6px 5px;
+    outline: none;
+    width: 200px;
+    height: 42px;
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+
+.aside_menu-new_category-input button {
+    right: 5px;
+    position: absolute;
+    border-radius: 6px;
+    background: #bebebe;
+    width: 39px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.aside_menu-new_category-input button.disabled {
+    background-color: #e3dfdf;
+}

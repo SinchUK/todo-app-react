@@ -1,0 +1,29 @@
+.line_trough {
+    text-decoration: line-through;
+}
+
+.main_block-task_input {
+    font-family: "SF Pro Display", sans-serif;
+    color: #aaa;
+    font-size: medium;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #fff;
+    padding: 3px 5px;
+    outline: none;
+    width: 150px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #000;
+}
+
+@media only screen and (min-width: 769px) {
+    .main_block-task_input {
+        font-size: large;
+        padding: 6px 18px;
+        width: 237px;
+        height: 42px;
+        border-radius: 8px;
+    }
+}

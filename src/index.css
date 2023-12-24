@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    height: 100%;
+}
+
+.App {
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    background-color: white;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .App {
+        border-radius: 15px;
+    }
+}
+
+/* Header */
+.app_header {
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+}
+
+.app_header-items {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.app_header-items li {
+    list-style: none;
+}
+
+.circle-red {
+    background-color: #ec6a5e;
+}
+
+.circle-yellow {
+    background-color: #f5bf4f;
+}
+
+.circle-green {
+    background-color: #61c554;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+@media (max-width: 769px) {
+    .App {
+        flex-direction: column;
+    }
 }
