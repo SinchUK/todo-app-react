@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/SinchUK/todo-app-react/static/css/main.18da1c07.css",
-    "main.js": "/SinchUK/todo-app-react/static/js/main.163aaf36.js",
-    "index.html": "/SinchUK/todo-app-react/index.html",
-    "static/media/recycle.svg": "/SinchUK/todo-app-react/static/media/recycle.a15bf0fabb129925f0c1b85a767e2f72.svg",
-    "static/media/check.svg": "/SinchUK/todo-app-react/static/media/check.6c2804d38f8d132b5d987f0ad521e33c.svg",
-    "static/media/pencil.svg": "/SinchUK/todo-app-react/static/media/pencil.c94a4da80971fe4986ceaa261135f063.svg",
-    "main.18da1c07.css.map": "/SinchUK/todo-app-react/static/css/main.18da1c07.css.map",
-    "main.163aaf36.js.map": "/SinchUK/todo-app-react/static/js/main.163aaf36.js.map"
+    "main.css": "/todo-app-react/static/css/main.18da1c07.css",
+    "main.js": "/todo-app-react/static/js/main.fa999356.js",
+    "index.html": "/todo-app-react/index.html",
+    "static/media/recycle.svg": "/todo-app-react/static/media/recycle.a15bf0fabb129925f0c1b85a767e2f72.svg",
+    "static/media/check.svg": "/todo-app-react/static/media/check.6c2804d38f8d132b5d987f0ad521e33c.svg",
+    "static/media/pencil.svg": "/todo-app-react/static/media/pencil.c94a4da80971fe4986ceaa261135f063.svg",
+    "main.18da1c07.css.map": "/todo-app-react/static/css/main.18da1c07.css.map",
+    "main.fa999356.js.map": "/todo-app-react/static/js/main.fa999356.js.map"
   },
   "entrypoints": [
     "static/css/main.18da1c07.css",
-    "static/js/main.163aaf36.js"
+    "static/js/main.fa999356.js"
   ]
 }
